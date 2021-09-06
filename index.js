@@ -1,11 +1,25 @@
-// jsBilling
-// Development build (hot garbage)
-// Version: 0.0.1
-// Author: Justin P.
-// Date: 2021-09-06
-// Description: jsBilling is a simple, easy to use, and free to use billing system.
-// It is designed to be used with a MySQL database.
-// Software License: MIt License
-// https://github.com/justinpooters/jsBilling/
+// Load the required modules
+const express = require('express');
+const http = require('http');
+const updatechecker = require("./addons/updater.js");
 
-console.log('Hello world');
+// update checker
+updatechecker.checkForUpdate();
+
+// Create the app (Express)
+const app = express();
+
+// Set the port, i chose 1001 because why not
+const port = 1001;
+
+// Create a basic route for Hello world
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
+// Set the app and log the "i'm alive" to the console
+app.listen(port, () => {
+    console.log(`========================================================`)
+    console.log(`jsBilling started on: http://localhost:${port}`);
+    console.log(`========================================================`)
+});

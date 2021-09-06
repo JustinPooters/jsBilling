@@ -1,0 +1,33 @@
+{
+    "name": "jsbilling",
+    "version": "0.0.1",
+    "description": "jsBilling is a simple, easy to use, and free to use billing system.",
+    "main": "index.js",
+    "scripts": {
+        "release": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JustinPooters/jsBilling.git"
+    },
+    "keywords": [
+        "js",
+        "Billing",
+        "free",
+        "opensource",
+        "stripe",
+        "paypal"
+    ],
+    "author": "Justin P",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/JustinPooters/jsBilling/issues"
+    },
+    "homepage": "https://github.com/JustinPooters/jsBilling#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.12",
+        "request": "^2.88.2"
+    }
+}
