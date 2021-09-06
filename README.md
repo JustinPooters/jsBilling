@@ -1,4 +1,5 @@
 # jsBilling
+![Build](https://app.travis-ci.com/JustinPooters/jsBilling.svg?branch=main)
 ``jsBilling`` is a open-source alternative to WHMCS, Hostbill and alikes, jsBilling is inspired by [pyBilling](https://github.com/pyTrinkets/pyBilling) by [Robert S](https://robert-s.dev).
 
 ## Installing jsBilling
