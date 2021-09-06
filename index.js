@@ -10,7 +10,7 @@ updatechecker.checkForUpdate();
 const app = express();
 
 // Set the port, i chose 1001 because why not
-const port = 1001;
+const port = 80;
 
 // Create a basic route for Hello world
 app.get('/', (req, res) => {

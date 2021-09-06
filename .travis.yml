@@ -9,3 +9,9 @@ script:
   - npm install
   - echo 'Starting test'
   - node index.js
+notifications:
+  email:
+    recipients:
+      - justin@justinpooters.nl
+    on_success: always
+    on_failure: always
