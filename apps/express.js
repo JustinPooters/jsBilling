@@ -1,14 +1,15 @@
 function start() {
     const express = require('express');
     const fs = require('fs')
-
     let info = require("../about.json");
+    const logger = require("../addons/logger")
+
     const app = express();
     const port = 1001;
     app.set('view engine', 'ejs');
     app.use(express.static(__dirname + '/public'));
 
-    const path = './config.env'
+    const path = './.env'
     if (fs.existsSync(path)) {
 
         app.get('/', (req, res) => {
@@ -25,22 +26,17 @@ function start() {
         });
 
 
-        app.listen(port, () => {
-            console.log(`========================================================`)
-            console.log(`jsBilling started on: http://localhost:${port}`);
-            console.log(`========================================================`)
+        app.listen(port, () => {            
+            logger.log(`jsBilling started on: http://localhost:${port}`);
         });
+
     } else {
-
-        app.get('/', (req, res) => {
-            let businessname = 'jsBilling';
-
-            res.render('pages/setup', {
-                name: "jsBilling",
-                tagline: "jsBilling setup"
-            });
-        });
-
+        function noenv() {
+            logger.error(`Please rename the .env.example to .env`)
+            logger.error(`and fill in the nessecery information (db)`)
+            logger.error(`then restart the server`)
+        }
+        setTimeout(noenv, 500);
     }
 }
 
