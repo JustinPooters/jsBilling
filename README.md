@@ -20,6 +20,12 @@ git clone https://github.com/justinpooters/jsBilling
 # Enter the jsBilling folder
 cd jsBilling
 
+# Move the file
+# for LINUX use this one
+mv about.json.example about.json
+# for WINDOWS use this one
+move about.json.example about.json
+
 # Install node Packages
 npm install
 
