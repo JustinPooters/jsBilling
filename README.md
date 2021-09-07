@@ -41,5 +41,8 @@ All unit tests will be available on [Travis-CI](https://app.travis-ci.com/github
 
 Dev1:
 ```
-DEV NOTE 1
+This shit is as unstable as it can be, don't use this (yet). 
 ```
+
+
+Btw if you like the project, star it ;)
