@@ -1,0 +1,10 @@
+{
+    "name": "Company Name",
+    "address": "123 this str, 12345 AA, Washington DC",
+    "tagline": "We are the best",
+    "website": "www.website.com",
+    "email": "hello@website.com",
+    "phone": "123-456-7890",
+    "description": "We are the best",
+    "logo_uri": "https://via.placeholder.com/512"   
+}
